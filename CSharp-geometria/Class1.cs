@@ -24,6 +24,27 @@ namespace CSharpClasseRettangolo {
             Console.WriteLine($"Larghezza: {this.larghezza}");
             area();
             perimetro();
+            stamparVideoRettangolo();
+        }
+
+        public void stamparVideoRettangolo() { 
+        
+            for(int i = 0; i < larghezza; i++) {
+                Console.Write("--");
+            }
+            Console.WriteLine();
+            for(int h=0;h< altezza; h++) {
+                Console.Write("|");
+                for (int j = 0; j < larghezza-1; j++) {
+                    Console.Write("  ");
+                }
+                Console.WriteLine("|");
+            }
+            for(int l = 0; l < larghezza; l++) {
+                Console.Write("--");
+            }
+            Console.WriteLine() ;
+        
         }
     }
 
