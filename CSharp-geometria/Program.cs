@@ -12,3 +12,14 @@ Perimetro: 60 cm
 Area: 200 cm2
 */
 
+
+using CSharpClasseRettangolo;
+
+Rettangolo rettangolo1= new Rettangolo();
+
+rettangolo1.altezza = 23;
+rettangolo1.larghezza= 30;
+
+
+rettangolo1.area();
+rettangolo1.perimetro();
